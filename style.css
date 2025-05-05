@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 nav{
     display: flex;
@@ -484,7 +487,6 @@ color: rgba(255, 255, 255, 1);
 
 .values-cards{
     height: auto;
-    gap: 32px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1204,5 +1206,23 @@ nav{
     nav .contact-container p{
         display: flex;
         justify-content: center;
+    }
+}
+
+@media (max-width: 1345px) {
+    .our-values{
+        padding: 80px;
+    }
+    .values-cards .card{
+    width: 49%;
+    margin-bottom: 20px;
+    }
+}
+@media (max-width: 1000px) {
+    .our-values{
+        padding: 80px 30px;
+    }
+    .values-cards .card{
+        width: 100%;
     }
 }
